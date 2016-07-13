@@ -1,23 +1,7 @@
 "use strict";
 
 
-var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H'
-    // "img/bag.png",
-    // "img/bag.png",
-    // "img/cocktail.png",
-    // "img/cocktail.png",
-    // "img/oxygen-tank.png",
-    // "img/oxygen-tank.png",
-    // "img/passport.png",
-    // "img/passport.png",
-    // "img/snorkel.png", "img/snorkel.png",
-    // "img/sunglasses.png",
-    // "img/sunglasses.png",
-    // "img/sun-protection.png",
-    // "img/sun-protection.png",
-    // "img/swimsuit.png",
-    // "img/swimsuit.png"
-];
+var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H'];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -47,7 +31,6 @@ function newBoard() {
 function memoryFlipTile(tile, val) {
 	
     if (tile.innerHTML == "" && memory_values.length < 2) {
-    	
         tile.style.background = '#B5838D';
         tile.innerHTML = val;
         if (memory_values.length == 0) {
@@ -58,8 +41,6 @@ function memoryFlipTile(tile, val) {
             memory_tile_ids.push(tile.id);
             if (memory_values[0] == memory_values[1]) {
                 tiles_flipped += 2;
-                
-
                 // Clear both arrays
                 memory_values = [];
                 memory_tile_ids = [];
@@ -88,6 +69,3 @@ function memoryFlipTile(tile, val) {
     }
 }
 newBoard();
-
-
-// <img src="' + memory_array[i] + '" alt="g" />
