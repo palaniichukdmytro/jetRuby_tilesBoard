@@ -1,0 +1,41 @@
+html, body{
+    height: 100%;
+    margin:0;
+}
+
+#memory_board {
+    background: #6D6875;
+    width: 80%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+}
+
+#memory_board > .tiles {
+    background: #B5838D;
+    color: #FFCDB2;
+    border: #E5989B 5px solid;
+    font-size: 64px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 18%;
+    -ms-flex: 1 1 18%;
+    flex: 1 1 18%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin: 1rem;
+    height: 100px;
+}
+
+img {
+    width: 50px;
+    height: 100px;
+}
